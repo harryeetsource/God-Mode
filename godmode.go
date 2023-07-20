@@ -150,7 +150,7 @@ func (s *patriotService) Start(service.Service) error {
 }
 func (s *patriotService) startGUI() (uint32, error) {
 	// Change from "patriot-gui.exe" to "PowerShell.exe"
-	cmdLine := windows.StringToUTF16Ptr("C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe")
+	cmdLine := windows.StringToUTF16Ptr("C:\\Windows\\System32\\WindowsPowerShell\v1.0\\powershell.exe")
 
 	// Get current process token
 	currentProcess, _ := windows.GetCurrentProcess()
@@ -203,9 +203,9 @@ func (s *patriotService) startGUI() (uint32, error) {
 }
 func main() {
 	svcConfig := &service.Config{
-		Name:        "PatriotService",
-		DisplayName: "The Patriot Service",
-		Description: "This is The Patriot Service.",
+		Name:        "GodMode",
+		DisplayName: "The hand of the lord",
+		Description: "Justice be done on the unholy",
 	}
 
 	p := &patriotService{}
