@@ -9,7 +9,11 @@ https://go.dev/
 
 go mod init golang.org/x/sys/windows
 
-// get dependencies
+// download requirements
+
+go mod tidy
+
+// get godmode dependencies
 
 go get github.com/kardianos/service
 
