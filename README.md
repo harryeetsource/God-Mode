@@ -1,8 +1,14 @@
 # God-Mode
 Access denied? Not anymore
+
 // download go programming language from google
 https://go.dev/
-// initialze go module file for godmode
-go mod init godmode
+
+// initialze go module file for godmode with the windows system go api
+go mod init golang.org/x/sys/windows
+
 // get dependencies
 go get github.com/kardianos/service
+
+// build  binary
+go build godmode.go
