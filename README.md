@@ -7,7 +7,7 @@ https://go.dev/
 
 // initialze go module file for godmode with the windows system go api
 
-go mod init golang.org/x/sys/windows
+go mod init github.com/harryeetsource/God-Mode
 
 // download requirements
 
