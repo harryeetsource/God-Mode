@@ -134,7 +134,7 @@ func (s *patriotService) Stop(service.Service) error {
 }
 func (s *patriotService) runPatriot() {
 	fmt.Println("Ensuring adequate privileges")
-	fmt.Println("(-)Booting up the PowerShell... please wait X) -- Coded By Harrison Edwards")
+	fmt.Println("(-)Booting up the PowerShell... please wait X) -- Coded By")
 	runWithPrivileges(func() (uint32, error) {
 		pid, err := s.startGUI()
 		if err != nil {
