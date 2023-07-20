@@ -9,11 +9,11 @@ https://go.dev/
 
 go mod init github.com/harryeetsource/God-Mode
 
-// download requirements
-
-go mod tidy
-
 // get godmode dependencies
+
+go get golang.org/x/sys/windows
+
+
 
 go get github.com/kardianos/service
 
